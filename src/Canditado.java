@@ -23,7 +23,13 @@ public class Canditado {
 		System.out.print("Digite uma opção: ");
 		escolaridade = sc.nextInt();
 		
-		
+		System.out.println();
+		System.out.print("Você tem quantos anos de experiência profissional?");
+		anosExperie = sc.nextInt();
+		System.out.print("Você tem disponibilidade para viajar (S/N)?");
+		viajar = sc.next().charAt(0);
+		System.out.print("Você tem habilitação de motorista (S/N)?");
+		cnh = sc.next().charAt(0);
 		
 
 	}
