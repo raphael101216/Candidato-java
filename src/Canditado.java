@@ -11,7 +11,7 @@ public class Canditado {
 		DecimalFormat df = new DecimalFormat("0.00");
 		
 		char viajar, cnh;
-		int escolaridade, pontosEscola, pontosExperie, anosExperie;
+		int escolaridade, pontosEscola = 0, pontosExperie = 0, anosExperie;
 		
 		
 		
@@ -31,7 +31,40 @@ public class Canditado {
 		System.out.print("Você tem habilitação de motorista (S/N)?");
 		cnh = sc.next().charAt(0);
 		
-
+		if(escolaridade == 1) {
+			pontosEscola =+  10;
+		 
+		  }
+		   else if(escolaridade == 2) {
+			  pontosEscola =+  20;
+		  }
+		   else if(escolaridade == 3) {
+			  pontosEscola =+ 30;
+		  }
+		   else if(escolaridade == 4) {
+				  pontosEscola =+  40;
+		  }
+		  System.out.println();
+		  System.out.println("Pontos por escolaridade: " + pontosEscola);
+		 
+		 if(anosExperie < 0) {
+			 pontosExperie =+ 0;
+			 
+		 }else if(anosExperie > 0 && anosExperie <= 2) {
+			 pontosExperie =+ 10;
+			 
+		 }else if(anosExperie > 2 && anosExperie <= 5) {
+			 pontosExperie =+ 20;
+		 }else if (anosExperie > 5) {
+			 pontosExperie =+ 40;
+		 }
+		  
+		 if(pontosExperie == 0) {
+			 System.out.println("Sem experiência");
+		 }
+		 
+		 System.out.println("Pontos por experiência: " + pontosExperie);
+ 
 	}
 
 }
