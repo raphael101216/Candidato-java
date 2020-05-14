@@ -64,6 +64,27 @@ public class Canditado {
 		 }
 		 
 		 System.out.println("Pontos por experiência: " + pontosExperie);
+		 System.out.println();
+		 
+		 if(escolaridade == 2 && cnh == 'S' || cnh == 's') {
+			 System.out.println("Você está habilitado para o(s) seguinte(s) cargo(s):");
+			 System.out.println("ASSISTENTE");
+			 
+		 }else if(anosExperie > 2 && escolaridade == 3) {
+			 System.out.println("Você está habilitado para o(s) seguinte(s) cargo(s):");
+			 System.out.println("GERENTE");
+			 
+		 }else if(anosExperie > 5 && viajar == 'S'  && escolaridade > 3 ) {
+			 System.out.println("Você está habilitado para o(s) seguinte(s) cargo(s):");
+			 System.out.println("GERENTE");
+			 System.out.println("Analista");
+			 
+		 }else if(pontosEscola == 10) {
+			 System.out.println("Infelizmente seu perfil não atende a empresa");
+		 }
+		 
+		 
+		 
  
 	}
 
